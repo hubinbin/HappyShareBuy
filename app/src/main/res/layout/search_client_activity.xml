@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mexue_44_dip"
+        android:background="@color/blue_41A9EB">
+
+        <LinearLayout
+            android:id="@+id/title_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/mexue_8_dip"
+                android:layout_height="@dimen/mexue_12_dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/mexue_11_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_white_left_arrow" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/title_bar_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mexue_11_dip"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mexue_14_dip" />
+
+        <EditText
+            android:id="@+id/search_client_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mexue_33_dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            android:layout_marginRight="@dimen/mexue_11_dip"
+            android:layout_toLeftOf="@id/title_bar_cancel"
+            android:layout_toRightOf="@id/title_bar_back"
+            android:background="@drawable/fillet_rectangle_wihte_solid"
+            android:drawableLeft="@mipmap/icon_seach"
+            android:drawablePadding="@dimen/mexue_5_dip"
+            android:hint="@string/search_goods"
+            android:paddingLeft="@dimen/mexue_11_dip"
+            android:paddingRight="@dimen/mexue_11_dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_5E"
+            android:textCursorDrawable="@drawable/edit_text_cursor_style"
+            android:textSize="@dimen/mexue_14_dip" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/search_client_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"></ListView>
+
+</LinearLayout>

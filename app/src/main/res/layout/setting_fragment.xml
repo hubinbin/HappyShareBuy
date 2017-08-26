@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_fragment_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/titile_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/setting_modify_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mexue_89_dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/setting_user_avatar"
+            android:layout_width="@dimen/mexue_58_dip"
+            android:layout_height="@dimen/mexue_58_dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            android:src="@drawable/circular_gray"
+            />
+
+        <TextView
+            android:id="@+id/setting_user_nick_name"
+            style="@style/tv_36_black"
+            android:layout_marginLeft="@dimen/mexue_20_dip"
+            android:layout_toRightOf="@+id/setting_user_avatar"
+            android:text="" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_modify_password"
+        style="@style/item_bg"
+        android:layout_marginTop="@dimen/mexue_6_dip"
+        >
+
+        <TextView
+            style="@style/tv_32_black"
+            android:text="@string/modify_password"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            />
+
+        <ImageView style="@style/right_arrow" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/setting_logout"
+        style="@style/long_button"
+        android:background="@drawable/fillet_rectangle_red_solid"
+        android:layout_marginTop="@dimen/mexue_44_dip"
+        android:text="@string/logout"
+        />
+
+</LinearLayout>

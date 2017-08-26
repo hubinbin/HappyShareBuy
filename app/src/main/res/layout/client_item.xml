@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mexue_6_dip"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/mexue_14_dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/client_item_company_image"
+                android:layout_width="@dimen/mexue_67_dip"
+                android:layout_height="@dimen/mexue_67_dip"
+                android:layout_marginTop="@dimen/mexue_18_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/default_picture" />
+
+            <TextView
+                android:id="@+id/client_item_company_status"
+                android:layout_width="@dimen/mexue_55_dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/mexue_11_dip"
+                android:layout_marginTop="@dimen/mexue_12_dip"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/mexue_4_dip"
+                android:paddingBottom="@dimen/mexue_4_dip"
+                android:background="@drawable/fillet_rectangle_green_solid"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/client_item_company_name"
+                style="@style/tv_32_black"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/mexue_18_dip"
+                android:layout_marginRight="@dimen/mexue_11_dip"
+                android:singleLine="true"
+                android:ellipsize="end"
+                 />
+
+            <TextView
+                android:id="@+id/client_item_company_link_name"
+                style="@style/tv_24_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/mexue_4_dip"
+                 />
+
+            <TextView
+                android:id="@+id/client_item_company_phone"
+                style="@style/tv_24_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/mexue_4_dip"
+                 />
+
+            <TextView
+                android:id="@+id/client_item_company_time"
+                style="@style/tv_24_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/mexue_4_dip"
+                 />
+
+
+            <View
+                style="@style/gray_line"
+                android:layout_marginTop="@dimen/mexue_9_dip"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:id="@+id/client_item_company_address"
+                style="@style/tv_24_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/mexue_12_dip"
+                android:layout_marginRight="@dimen/mexue_11_dip"
+                 />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

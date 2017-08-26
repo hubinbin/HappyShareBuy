@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ban_transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/selected_pic_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/selected_pic_camera"
+            style="@style/long_button"
+            android:background="@drawable/fillet_rectangle_wihte_solid"
+            android:text="@string/camera"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/selected_pic_album"
+            style="@style/long_button"
+            android:layout_marginTop="@dimen/mexue_5_dip"
+            android:background="@drawable/fillet_rectangle_wihte_solid"
+            android:text="@string/album"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/selected_pic_cancel"
+            style="@style/long_button"
+            android:layout_marginBottom="@dimen/mexue_10_dip"
+            android:layout_marginTop="@dimen/mexue_10_dip"
+            android:background="@drawable/fillet_rectangle_wihte_solid"
+            android:text="@string/cancel"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

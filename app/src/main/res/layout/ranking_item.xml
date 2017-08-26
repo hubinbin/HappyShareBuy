@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mexue_50_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ranking_user_avatar"
+            android:layout_width="@dimen/mexue_40_dip"
+            android:layout_height="@dimen/mexue_40_dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            android:src="@drawable/circular_gray" />
+
+        <TextView
+            android:id="@+id/ranking_user_name"
+            style="@style/tv_32_black"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            android:layout_toRightOf="@id/ranking_user_avatar" />
+
+        <TextView
+            android:id="@+id/ranking_user_score"
+            style="@style/tv_32_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mexue_11_dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/client_details_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titile_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/show_qrcode">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/mexue_17_dip"
+                        android:paddingTop="@dimen/mexue_16_dip">
+
+                        <ImageView
+                            android:id="@+id/show_company_logo"
+                            android:layout_width="@dimen/mexue_58_dip"
+                            android:layout_height="@dimen/mexue_58_dip"
+                            android:layout_marginLeft="@dimen/mexue_14_dip"
+                            android:src="@mipmap/default_picture" />
+
+                        <TextView
+                            android:id="@+id/show_company_name"
+                            style="@style/tv_32_black"
+                            android:layout_alignTop="@+id/show_company_logo"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:layout_marginTop="@dimen/mexue_6_dip"
+                            android:layout_toRightOf="@+id/show_company_logo"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/show_trading_area"
+                            style="@style/tv_28_gray"
+                            android:layout_alignLeft="@+id/show_company_name"
+                            android:layout_below="@+id/show_company_name"
+                            android:layout_marginTop="@dimen/mexue_15_dip"
+                            android:text=""
+
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:layout_width="@dimen/mexue_10_dip"
+                            android:layout_height="@dimen/mexue_12_dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/mexue_14_dip"
+                            android:src="@mipmap/icon_location" />
+
+                        <TextView
+                            android:id="@+id/show_company_address"
+                            style="@style/tv_32_black"
+                            android:layout_marginBottom="@dimen/mexue_10_dip"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:layout_marginRight="@dimen/mexue_7_dip"
+                            android:layout_marginTop="@dimen/mexue_10_dip"
+                            android:text="" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mexue_6_dip"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/mexue_44_dip"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/mexue_11_dip"
+                        android:text="@string/picture_info"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/mexue_14_dip" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/mexue_129_dip"
+                        android:layout_marginTop="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/show_company_image"
+                                android:layout_width="@dimen/mexue_58_dip"
+                                android:layout_height="@dimen/mexue_58_dip"
+                                android:src="@mipmap/default_picture" />
+
+                            <TextView
+                                style="@style/tv_32_black"
+                                android:layout_marginTop="@dimen/mexue_6_dip"
+                                android:text="@string/house_photos" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/show_company_busy"
+                                android:layout_width="@dimen/mexue_58_dip"
+                                android:layout_height="@dimen/mexue_58_dip"
+                                android:src="@mipmap/default_picture" />
+
+                            <TextView
+                                style="@style/tv_32_black"
+                                android:layout_marginTop="@dimen/mexue_6_dip"
+                                android:text="@string/company_license" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/show_company_busy_no_rel"
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/busy_license_number" />
+
+                        <TextView
+                            android:id="@+id/show_busy_license_number"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mexue_6_dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/mexue_44_dip"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/mexue_11_dip"
+                        android:text="@string/basic_info"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/mexue_14_dip" />
+
+                    <RelativeLayout
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/contacts" />
+
+                        <TextView
+                            android:id="@+id/show_company_contacts"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/contact_number" />
+
+                        <TextView
+                            android:id="@+id/show_company_phone"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/show_id_card_rel"
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/id_card" />
+
+                        <TextView
+                            android:id="@+id/show_id_card"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/show_wechat_rel"
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/weixin" />
+
+                        <TextView
+                            android:id="@+id/show_wechat"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/show_mailbox_rel"
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/email" />
+
+                        <TextView
+                            android:id="@+id/show_mailbox"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/show_intention_rel"
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/purchase_intention" />
+
+                        <TextView
+                            android:id="@+id/show_intention"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/registration_time" />
+
+                        <TextView
+                            android:id="@+id/show_company_time"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/show_service_record"
+                        style="@style/item_bg"
+                        android:layout_marginTop="@dimen/mexue_6_dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/record" />
+
+                        <ImageView style="@style/right_arrow" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        style="@style/item_bg"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mexue_6_dip"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/mexue_6_dip"
+                        android:paddingTop="@dimen/mexue_6_dip">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/remarks" />
+
+                        <TextView
+                            android:id="@+id/show_remarks"
+                            style="@style/tv_28_gray"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:layout_marginTop="@dimen/mexue_3_dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/show_qrcode"
+            style="@style/long_button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/mexue_6_dip"
+            android:layout_marginTop="@dimen/mexue_6_dip"
+            android:background="@drawable/fillet_rectangle_red_solid"
+            android:text="@string/get_qr_code" />
+
+    </RelativeLayout>
+
+</LinearLayout>

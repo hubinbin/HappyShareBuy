@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/title_bg</item>
+        <item name="colorPrimaryDark">@color/title_bg</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="item_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mexue_49_dip</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="long_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mexue_36_dip</item>
+        <item name="android:layout_marginLeft">@dimen/mexue_11_dip</item>
+        <item name="android:layout_marginRight">@dimen/mexue_11_dip</item>
+        <item name="android:textSize">@dimen/mexue_14_dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tv_32_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/mexue_14_dip</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="tv_24_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/mexue_11_dip</item>
+        <item name="android:textColor">@color/gray_5E</item>
+    </style>
+    <style name="tv_28_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/mexue_12_dip</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/mexue_11_dip</item>
+        <item name="android:textColor">@color/gray_5E</item>
+    </style>
+
+    <style name="tv_36_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/mexue_16_dip</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="tab_bottom_line">
+        <item name="android:layout_width">@dimen/mexue_48_dip</item>
+        <item name="android:layout_height">@dimen/mexue_3_dip</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/red_FC3D3D</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="right_arrow">
+        <item name="android:layout_width">@dimen/mexue_7_dip</item>
+        <item name="android:layout_height">@dimen/mexue_12_dip</item>
+        <item name="android:src">@mipmap/icon_gray_right_arrow</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/mexue_11_dip</item>
+    </style>
+
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="item_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/mexue_11_dip</item>
+        <item name="android:layout_marginRight">@dimen/mexue_11_dip</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:inputType">text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_style</item>
+        <item name="android:textSize">@dimen/mexue_14_dip</item>
+    </style>
+
+
+    <style name="gray_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/gray_BF</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/ban_transparent</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景半透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+</resources>

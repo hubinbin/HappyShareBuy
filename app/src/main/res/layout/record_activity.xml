@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/titile_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:id="@+id/record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/record_no_msg"
+        style="@style/tv_32_black"
+        android:layout_marginTop="@dimen/mexue_100_dip"
+        android:visibility="gone"
+        android:text="@string/no_record" />
+
+
+</LinearLayout>

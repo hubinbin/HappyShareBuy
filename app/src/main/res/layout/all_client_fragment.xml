@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_client_fragment_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <djs.com.happysharebuy.view.refresh.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <djs.com.happysharebuy.view.refresh.PullListView
+                android:id="@+id/client_fragment_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"></djs.com.happysharebuy.view.refresh.PullListView>
+
+            <include layout="@layout/load_more" />
+        </djs.com.happysharebuy.view.refresh.PullToRefreshLayout>
+
+
+        <TextView
+            android:id="@+id/client_fragment_no_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="暂无客户"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mexue_16_dip"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

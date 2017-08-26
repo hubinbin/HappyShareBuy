@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titile_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/login_input_account"
+        style="@style/item_bg"
+        android:layout_marginTop="@dimen/mexue_9_dip"
+        android:hint="@string/account_phone"
+        android:inputType="text"
+        android:paddingLeft="@dimen/mexue_11_dip"
+        android:paddingRight="@dimen/mexue_11_dip"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/edit_text_cursor_style"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_5E"
+        android:textSize="@dimen/mexue_14_dip" />
+
+    <EditText
+        android:id="@+id/login_input_password"
+        style="@style/item_bg"
+        android:layout_marginTop="0.5dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/mexue_11_dip"
+        android:paddingRight="@dimen/mexue_11_dip"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/edit_text_cursor_style"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_5E"
+        android:textSize="@dimen/mexue_14_dip" />
+
+
+    <Button
+        android:id="@+id/login_submit"
+        style="@style/long_button"
+        android:layout_marginTop="@dimen/mexue_48_dip"
+        android:background="@drawable/fillet_rectangle_gray_solid"
+        android:text="@string/login" />
+
+
+</LinearLayout>

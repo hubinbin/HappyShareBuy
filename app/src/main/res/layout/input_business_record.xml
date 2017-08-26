@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/mexue_39_dip">
+
+
+    <EditText
+        android:id="@+id/input_fragment_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mexue_26_dip"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/input_service_record"
+        android:minHeight="@dimen/mexue_116_dip"
+        android:padding="@dimen/mexue_11_dip"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_5E"
+        android:textCursorDrawable="@drawable/edit_text_cursor_style"
+        android:textSize="@dimen/mexue_14_dip" />
+
+
+    <Button
+        android:id="@+id/input_fragment_submit"
+        style="@style/long_button"
+        android:layout_marginTop="@dimen/mexue_30_dip"
+        android:background="@drawable/fillet_rectangle_red_solid"
+        android:text="@string/add" />
+
+    <TextView
+        android:id="@+id/location_error_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mexue_11_dip"
+        android:layout_marginTop="@dimen/mexue_11_dip"
+        android:textColor="@color/gray_5E"
+        android:textSize="@dimen/mexue_11_dip"
+        android:visibility="gone"
+        />
+</LinearLayout>

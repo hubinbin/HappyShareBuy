@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mexue_39_dip"
+        android:background="@color/title_bg">
+
+        <LinearLayout
+            android:id="@+id/title_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/mexue_15_dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/mexue_8_dip"
+                android:layout_height="@dimen/mexue_12_dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/mexue_11_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_white_left_arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mexue_16_dip" />
+
+        <TextView
+            android:id="@+id/title_bar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mexue_11_dip"
+            android:text="@string/modify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mexue_14_dip"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/title_bar_right_img"
+            android:layout_width="@dimen/mexue_18_dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/mexue_11_dip"
+            android:src="@mipmap/icon_dian"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/title_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/title_right_icon"
+                android:layout_width="@dimen/mexue_15_dip"
+                android:layout_height="@dimen/mexue_15_dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/mexue_11_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_wihte_search" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
