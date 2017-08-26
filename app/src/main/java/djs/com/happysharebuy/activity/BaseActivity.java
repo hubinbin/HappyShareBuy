@@ -12,6 +12,7 @@ import djs.com.happysharebuy.utils.CloseActivityClass;
 
 /**
  * Created by hbb on 2017/6/28.
+ * BaseActivity
  */
 
 public abstract class BaseActivity extends Activity {
