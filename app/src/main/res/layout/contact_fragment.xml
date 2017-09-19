@@ -6,6 +6,15 @@
     android:background="@color/root_layout_bg"
     android:orientation="vertical">
 
+
+    <TextView
+        android:id="@+id/contact_fragment_no_msg"
+        style="@style/tv_32_black"
+        android:layout_marginTop="@dimen/mexue_100_dip"
+        android:text="暂无排行榜"
+        android:visibility="gone"
+        />
+
     <ListView
         android:id="@+id/contact_fragment_list"
         android:layout_width="match_parent"

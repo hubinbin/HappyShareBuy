@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
@@ -32,7 +31,6 @@ import djs.com.happysharebuy.adapter.ClientAdapter;
 import djs.com.happysharebuy.entity.ClientBean;
 import djs.com.happysharebuy.utils.CustomRequestParams;
 import djs.com.happysharebuy.utils.ErrorDispose;
-import djs.com.happysharebuy.utils.RequestService;
 import djs.com.happysharebuy.utils.ToastUtils;
 import djs.com.happysharebuy.utils.XmlUtils;
 import djs.com.happysharebuy.view.refresh.PullListView;

@@ -231,7 +231,9 @@
             style="@style/item_bg"
             android:layout_height="@dimen/mexue_67_dip"
             android:layout_marginTop="0.5dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
 
             <TextView
                 style="@style/tv_32_black"
@@ -256,7 +258,9 @@
             style="@style/item_bg"
             android:layout_height="@dimen/mexue_67_dip"
             android:layout_marginTop="0.5dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
 
             <TextView
                 style="@style/tv_32_black"

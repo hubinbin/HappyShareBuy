@@ -32,6 +32,7 @@ import djs.com.happysharebuy.R;
 import djs.com.happysharebuy.activity.BaseFragment;
 import djs.com.happysharebuy.activity.LoginActivity;
 import djs.com.happysharebuy.activity.setting.ModifyPasswordActivity;
+import djs.com.happysharebuy.activity.setting.SignActivity;
 import djs.com.happysharebuy.entity.CommonBean;
 import djs.com.happysharebuy.utils.CloseActivityClass;
 import djs.com.happysharebuy.utils.CustomRequestParams;
@@ -96,7 +97,7 @@ public class SettingFragment extends BaseFragment implements SelectedPicPop.OnCl
 
     }
 
-    @Event(value = {R.id.setting_modify_password, R.id.setting_modify_avatar, R.id.setting_logout})
+    @Event(value = {R.id.setting_modify_password, R.id.setting_modify_avatar, R.id.setting_logout,R.id.setting_modify_sign})
     private void onClick(View v) {
         switch (v.getId()) {
             case R.id.setting_modify_password:
@@ -111,6 +112,11 @@ public class SettingFragment extends BaseFragment implements SelectedPicPop.OnCl
                 break;
             case R.id.setting_logout:
                 CustomWorkDialog.showDialog(getActivity(), "", CustomWorkDialog.LOGOUT);
+                break;
+            case R.id.setting_modify_sign:
+                Intent intent2 = new Intent();
+                intent2.setClass(getActivity(), SignActivity.class);
+                startActivity(intent2);
                 break;
         }
     }

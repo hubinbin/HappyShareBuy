@@ -6,11 +6,6 @@
     android:background="@color/root_layout_bg"
     android:orientation="vertical">
 
-    <include
-        layout="@layout/titile_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -103,6 +98,7 @@
                     android:visibility="visible">
 
                     <TextView
+                        android:id="@+id/company_picture_info"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/mexue_44_dip"
                         android:background="@color/white"
@@ -110,7 +106,9 @@
                         android:paddingLeft="@dimen/mexue_11_dip"
                         android:text="@string/picture_info"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/mexue_14_dip" />
+                        android:textSize="@dimen/mexue_14_dip"
+                        android:visibility="gone"
+                        />
 
 
                     <LinearLayout
@@ -118,6 +116,7 @@
                         android:layout_height="@dimen/mexue_129_dip"
                         android:layout_marginTop="0.5dp"
                         android:background="@color/white"
+                        android:visibility="gone"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -297,6 +296,23 @@
 
                         <TextView
                             android:id="@+id/show_intention"
+                            style="@style/tv_28_gray" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/show_price_rel"
+                        style="@style/item_bg"
+                        android:layout_marginTop="0.5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tv_32_black"
+                            android:layout_centerHorizontal="false"
+                            android:layout_marginLeft="@dimen/mexue_11_dip"
+                            android:text="@string/transaction_price" />
+
+                        <TextView
+                            android:id="@+id/show_price"
                             style="@style/tv_28_gray" />
                     </RelativeLayout>
 

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -42,6 +43,8 @@ public class ContactFragment extends BaseFragment {
 
     @ViewInject(R.id.contact_fragment_list)
     private ListView contact_list;
+    @ViewInject(R.id.contact_fragment_no_msg)
+    private TextView no_msg;
 
     private RankingAdapter rankingAdapter;
 
@@ -113,10 +116,20 @@ public class ContactFragment extends BaseFragment {
      */
     private void requestRankingSuccess(String result) {
         Gson gson = HSBApplication.getGson();
-        List<UserBean> users = gson.fromJson(result,new TypeToken<LinkedList<UserBean>>(){}.getType());
-        if (users != null){
+        List<UserBean> users = gson.fromJson(result, new TypeToken<LinkedList<UserBean>>() {
+        }.getType());
+        if (users != null) {
             rankingAdapter.setData(users);
+            if (users.size() == 0) {
+                no_msg.setVisibility(View.VISIBLE);
+                contact_list.setVisibility(View.GONE);
+            } else {
+                no_msg.setVisibility(View.GONE);
+                contact_list.setVisibility(View.VISIBLE);
+            }
         }
+
+
     }
 
 }

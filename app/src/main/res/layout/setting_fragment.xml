@@ -55,6 +55,22 @@
         <ImageView style="@style/right_arrow" />
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/setting_modify_sign"
+        style="@style/item_bg"
+        android:layout_marginTop="@dimen/mexue_6_dip"
+        >
+
+        <TextView
+            style="@style/tv_32_black"
+            android:text="@string/punch_clock"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="@dimen/mexue_11_dip"
+            />
+
+        <ImageView style="@style/right_arrow" />
+    </RelativeLayout>
+
 
     <Button
         android:id="@+id/setting_logout"

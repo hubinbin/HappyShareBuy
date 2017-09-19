@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -46,6 +47,8 @@ public class SearchClientActivity extends BaseActivity implements AdapterView.On
     private EditText edt_search;
     @ViewInject(R.id.search_client_list)
     private ListView client_list;
+    @ViewInject(R.id.search_client_no)
+    private TextView tv_no;
 
     private ClientAdapter clientAdapter;
 
@@ -100,6 +103,7 @@ public class SearchClientActivity extends BaseActivity implements AdapterView.On
      * 请求客户列表
      */
     private void requestClientList(String condition) {
+        startProgressBar(this,"正在搜索，请稍后...");
         RequestParams params = CustomRequestParams.getParams(getActivity());
         params.addBodyParameter("act", "companylist");
         params.addBodyParameter("p", "1");
@@ -132,6 +136,7 @@ public class SearchClientActivity extends BaseActivity implements AdapterView.On
 
             @Override
             public void onFinished() {
+                dismissProgressBar();
             }
         });
     }
@@ -147,6 +152,12 @@ public class SearchClientActivity extends BaseActivity implements AdapterView.On
         }.getType());
         if (clients != null) {
             clientAdapter.setData(clients);
+            if (clients.size() == 0){
+                tv_no.setVisibility(View.VISIBLE);
+            }else {
+                tv_no.setVisibility(View.GONE);
+            }
+
         }
     }
 
@@ -155,7 +166,7 @@ public class SearchClientActivity extends BaseActivity implements AdapterView.On
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         ClientBean clientBean = (ClientBean)client_list.getItemAtPosition(i);
         Intent intent = new Intent();
-        intent.setClass(getActivity(),ClientDetailsActivity.class);
+        intent.setClass(getActivity(),ClientInfoFragment.class);
         intent.putExtra("client",clientBean);
         startActivity(intent);
     }

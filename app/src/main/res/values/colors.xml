@@ -16,4 +16,9 @@
     <color name="green_79E240">#79E240</color>
     <color name="ban_transparent">#7d000000</color>
     <color name="transparent">#00000000</color>
+    <color name="navigation_bar_background">#3E3E40</color>
+    <color name="navigation_bar_tv_color">#999999</color>
+    <color name="information_line_color">#DFDFDD</color>
+    <color name="gray_bg">#F1F1F1</color>
+    <color name="send_notic_title">#4D4D4D</color>
 </resources>

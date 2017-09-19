@@ -22,6 +22,7 @@ public class HSBApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Instance = this;
         //初始化xUtils
         x.Ext.init(this);
         x.Ext.setDebug(isDebug);

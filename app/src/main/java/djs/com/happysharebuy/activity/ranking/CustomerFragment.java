@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -43,9 +44,10 @@ public class CustomerFragment extends BaseFragment {
     @ViewInject(R.id.contact_fragment_lin)
     private LinearLayout contact_fragment_lin;
 
-
     @ViewInject(R.id.contact_fragment_list)
     private ListView contact_list;
+    @ViewInject(R.id.contact_fragment_no_msg)
+    private TextView no_msg;
 
     private RankingAdapter rankingAdapter;
 
@@ -80,9 +82,9 @@ public class CustomerFragment extends BaseFragment {
         params.addBodyParameter("Act", "monthtopsuccess");
         params.addBodyParameter("year", dates[0]);
         params.addBodyParameter("month", Integer.parseInt(dates[1]) + "");
-        x.http().post(params, new Callback.CommonCallback<String>() {
+        x.http().get(params, new Callback.CommonCallback<JSONArray>() {
             @Override
-            public void onSuccess(String jsonArray) {
+            public void onSuccess(JSONArray jsonArray) {
                 String str = jsonArray.toString();
                 LogUtil.i(str);
                 if (!TextUtils.isEmpty(str) && TextUtils.equals("[", str.trim().substring(0, 1))) {
@@ -121,6 +123,14 @@ public class CustomerFragment extends BaseFragment {
         }.getType());
         if (users != null) {
             rankingAdapter.setData(users);
+            if (users.size() == 0) {
+                no_msg.setVisibility(View.VISIBLE);
+                no_msg.setText("无成功客户");
+                contact_list.setVisibility(View.GONE);
+            } else {
+                no_msg.setVisibility(View.GONE);
+                contact_list.setVisibility(View.VISIBLE);
+            }
         }
     }
 

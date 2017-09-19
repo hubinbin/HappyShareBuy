@@ -116,6 +116,21 @@
     <string name="purchase_intention">购买意向</string>
     <string name="get_qr_code">生成二维码</string>
     <string name="primary_information">主要信息(必填)</string>
+    <string name="punch_clock">上班打卡</string>
+    <string name="punch">打卡</string>
+    <string name="query">查询</string>
+    <string name="attendance_record">考勤记录</string>
+    <string name="please_input">请输入</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="client_info">客户信息</string>
+    <string name="add_picture">添加图片</string>
+    <string name="all_picture">全部照片</string>
+    <string name="folder_all">所有照片</string>
+    <string name="preview">预览</string>
+    <string name="camera_picture">拍摄照片</string>
+    <string name="transaction_price">成交价格</string>
+
 
 
 

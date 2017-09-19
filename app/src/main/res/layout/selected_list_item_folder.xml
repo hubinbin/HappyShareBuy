@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/mexue_8_dip"
+    android:paddingTop="@dimen/mexue_8_dip" >
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="@dimen/mexue_36_dip"
+        android:layout_height="@dimen/mexue_36_dip"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/mexue_13_dip"
+        android:scaleType="centerInside"
+        android:src="@mipmap/default_picture"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/mexue_13_dip"
+        android:layout_toLeftOf="@+id/indicator"
+        android:layout_toRightOf="@+id/cover"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部照片"
+            android:textColor="@color/navigation_bar_background"
+            android:textSize="@dimen/mexue_14_dip" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="(10张)"
+            android:textColor="@color/navigation_bar_background"
+            android:textSize="@dimen/mexue_14_dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/icon_select_pic_focused"
+        android:visibility="visible" />
+
+</RelativeLayout>

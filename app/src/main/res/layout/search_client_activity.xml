@@ -57,9 +57,22 @@
             android:textColor="@color/black"
             android:textColorHint="@color/gray_5E"
             android:textCursorDrawable="@drawable/edit_text_cursor_style"
+            android:imeOptions="actionSearch"
             android:textSize="@dimen/mexue_14_dip" />
     </RelativeLayout>
 
+
+    <TextView
+        android:id="@+id/search_client_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无此客户"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/mexue_50_dip"
+        android:textSize="@dimen/mexue_15_dip"
+        android:visibility="gone"
+        />
 
     <ListView
         android:id="@+id/search_client_list"

@@ -583,6 +583,7 @@ public class DateUtil {
 
     /**
      * 处理返回时间
+     *
      * @param date
      * @return
      */
@@ -590,10 +591,10 @@ public class DateUtil {
         if (TextUtils.isEmpty(date)) {
             return "";
         }
-		if (date.contains("/Date(")){
-            date = date.replace("/Date(","");
-            if (date.contains(")/")){
-                date = date.replace(")/","");
+        if (date.contains("/Date(")) {
+            date = date.replace("/Date(", "");
+            if (date.contains(")/")) {
+                date = date.replace(")/", "");
             }
         }
 //        stampToDate(date);
@@ -610,6 +611,30 @@ public class DateUtil {
         Date date = new Date(lt);
         res = FORMATER_DAY2.format(date);
         return res;
+    }
+
+    /**
+     * 取得当月天数
+     */
+    public static int getCurrentMonthLastDay() {
+        Calendar a = Calendar.getInstance();
+        a.set(Calendar.DATE, 1);//把日期设置为当月第一天
+        a.roll(Calendar.DATE, -1);//日期回滚一天，也就是最后一天
+        int maxDate = a.get(Calendar.DATE);
+        return maxDate;
+    }
+
+    /**
+     * 根据年 月 获取对应的月份 天数
+     */
+    public static int getDaysByYearMonth(int year, int month) {
+        Calendar a = Calendar.getInstance();
+        a.set(Calendar.YEAR, year);
+        a.set(Calendar.MONTH, month - 1);
+        a.set(Calendar.DATE, 1);
+        a.roll(Calendar.DATE, -1);
+        int maxDate = a.get(Calendar.DATE);
+        return maxDate;
     }
 
 }

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_layout_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titile_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mexue_21_dip">
+
+        <LinearLayout
+            android:id="@+id/sign_activity_punch"
+            android:layout_width="@dimen/mexue_117_dip"
+            android:layout_height="@dimen/mexue_117_dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mexue_29_dip"
+            android:background="@mipmap/bg_sign"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/punch"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mexue_21_dip" />
+
+            <TextView
+                android:id="@+id/sign_activity_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mexue_5_dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mexue_14_dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_activity_current_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mexue_15_dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mexue_12_dip" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mexue_40_dip"
+        android:layout_marginTop="@dimen/mexue_6_dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/mexue_11_dip"
+        android:text="@string/attendance_record"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mexue_14_dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mexue_44_dip"
+        android:background="@color/white"
+        android:layout_marginTop="0.5dp"
+        >
+        
+        <Button
+            android:id="@+id/sign_activity_query"
+            android:layout_width="@dimen/mexue_55_dip"
+            android:layout_height="@dimen/mexue_28_dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/query"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mexue_11_dip"
+            android:layout_marginRight="@dimen/mexue_11_dip"
+            android:background="@drawable/fillet_rectangle_blue_solid"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/sign_activity_query"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/sign_activity_year"
+                style="@style/item_edittext"
+                android:hint="@string/please_input"
+                android:layout_width="@dimen/mexue_50_dip"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/mexue_39_dip"
+                 />
+
+            <TextView
+               style="@style/tv_32_black"
+                android:text="@string/year"
+                />
+
+            <EditText
+                android:id="@+id/sign_activity_month"
+                style="@style/item_edittext"
+                android:hint="@string/please_input"
+                android:layout_width="@dimen/mexue_50_dip"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/mexue_30_dip"
+                />
+            <TextView
+                style="@style/tv_32_black"
+                android:text="@string/month"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="0.5dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/sign_activity_query_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/mexue_19_dip"
+            android:textColor="@color/red_FC3D3D"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mexue_30_dip"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

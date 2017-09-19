@@ -29,8 +29,6 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
 
-
-
     <application
         android:name=".HSBApplication"
         android:allowBackup="true"
@@ -76,10 +74,25 @@
         <activity
             android:name=".activity.client.RecordActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.client.AddPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.setting.SignActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".selectpic.MultiImageSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.client.MviewPager"
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".activity.client.LargerPreviewActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
 
         <provider

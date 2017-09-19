@@ -77,6 +77,22 @@
                 android:src="@mipmap/icon_wihte_search" />
         </LinearLayout>
 
+
+        <Button
+            android:id="@+id/title_bar_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mexue_27_dip"
+            android:background="@drawable/fillet_rectangle_red_solid"
+            android:paddingLeft="@dimen/mexue_9_dip"
+            android:paddingRight="@dimen/mexue_9_dip"
+            android:layout_marginRight="@dimen/mexue_12_dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mexue_12_dip"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
     </RelativeLayout>
 
 
